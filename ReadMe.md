@@ -1,4 +1,4 @@
-![REHYDRA (1)](https://github.com/user-attachments/assets/d57eeee4-1839-40fc-b361-24f66b847a04)
+![REHYDRA (2)](https://github.com/user-attachments/assets/7503a054-595a-4b7e-a0f4-ea1ddcf7adbb)
 
 # Credits:
 
