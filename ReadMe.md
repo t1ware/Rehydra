@@ -2,9 +2,9 @@
 
 # Credits:
 
-- Neptune - Obfuscating the script
+- Neptune, leaked - Obfuscating the script
 
-- xn1781 - Coding
+- xn1781, leaked - Coding
 
 - zwag, goober and Neptune - Testers
 
