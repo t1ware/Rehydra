@@ -1,4 +1,4 @@
-getgenv().Data = {
+getgenv().Data = Data or {
         InviteToDiscord = false, -- fix stupid curl error
         Intro = true,
         KillSayStuff = {
