@@ -1,3 +1,5 @@
+-- made by zwag
+
 if not Settings.Enable then 
     return
 end
