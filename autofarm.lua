@@ -1,5 +1,7 @@
 -- made by zwag
 
+repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer:FindFirstChild("DataLoaded")
+
 if not Settings.Enable then 
     return
 end
