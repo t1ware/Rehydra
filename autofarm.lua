@@ -22,7 +22,7 @@ local WeaponMetadata = require("@WeaponMetadata")
 local MeleeWeaponClient = require("@MeleeWeaponClient")
 local RagdollableClient = require("@RagdollableClient")
 local SpawnHandlerClient = require("@SpawnHandlerClient")
-setthreadidentity(7)
+setthreadidentity(8)
 
 function GetWeapon(Player)
 	local Player = Player or LocalPlayer
@@ -157,7 +157,7 @@ RunService.RenderStepped:Connect(function()
         if InMenu(LocalPlayer) then
             setthreadidentity(2)
             SpawnHandlerClient.spawnCharacter(true)
-            setthreadidentity(7)
+            setthreadidentity(8)
             task.wait(0.5)
             Teleport(CFrame.new(22, -111, 4007))
         end
@@ -269,7 +269,7 @@ RunService.RenderStepped:Connect(function()
             SpawnHandlerClient.spawnCharacter(true)
             task.wait(0.5)
             Teleport(CFrame.new(19, -111, 4007))
-            setthreadidentity(7)
+            setthreadidentity(8)
         end
     end
 end)
