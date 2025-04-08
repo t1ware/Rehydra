@@ -1,4 +1,5 @@
 -- made by zwag
+-- open sourced here, obfuscated in rehydra server !! :)
 
 repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer:FindFirstChild("DataLoaded")
 
