@@ -1,4 +1,5 @@
 -- made by zwag
+-- boii tuff code (len)
 -- open sourced here, obfuscated in rehydra server !! :)
 
 repeat task.wait() until game:IsLoaded() and game.Players.LocalPlayer:FindFirstChild("DataLoaded")
@@ -198,16 +199,6 @@ RunService.RenderStepped:Connect(function()
 
                                 if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("Head") and health ~= 0 then
                                     local character = targetPlayer.Character
-                                    local data = metadata._humanoidsAlreadyHit[character]
-                                    if not data then
-                                        metadata._humanoidsAlreadyHit[character] = {
-                                            ["hitDetectionStage"] = 0,
-                                            ["amountOfTimesHit"] = 0,
-                                            ["lastHitTick"] = 0
-                                        }
-                                        data = metadata._humanoidsAlreadyHit[character]
-                                    end
-
                                     Network:FireServer("MeleeDamage", 
                                         weapon, 
                                         character.Head, 
@@ -219,10 +210,6 @@ RunService.RenderStepped:Connect(function()
                                         Vector3.yAxis, 
                                         tick() - metadata._lastSlashTick
                                     )
-
-                                    data.hitDetectionStage = metadata.hitDetectionStage or 1
-                                    data.amountOfTimesHit += 1
-                                    data.lastHitTick = tick()
                                 end
                             end
                             break
